@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/playingbg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/leftbutton" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="奔"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+                        android:text="孙燕姿"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/rightbutton" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="263dp"
+                android:layout_height="263dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/play_disc" />
+
+            <ProgressBar
+                android:layout_width="340dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:indeterminateDrawable="@drawable/play_plybar_bg" />
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="00:00"
+                    android:textColor="#FFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="#FFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/play_btn_love" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/play_rdi_btn_play" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/play_btn_next" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

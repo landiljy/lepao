@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/runningbg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/leftbutton" />
+
+                <TextView
+                    android:layout_width="260dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="跑步FM"
+                    android:textAlignment="center"
+                    android:textColor="#FFF"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/mplaying" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/jibu" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/shutiao" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="最后的战役 - 周杰伦"
+                    android:textColor="#C0C8BB"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:text="音乐的平均频率：125步/分钟"
+                    android:textColor="#61685F"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/play_btn_love" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/splaying" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/play_btn_next" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

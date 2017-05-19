@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#040F00">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/banner" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="320dp"
+                    android:src="@drawable/photo8" />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/photo" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Rudy女王"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#E3E3E0"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#081700"
+            android:orientation="horizontal">
+            <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="105dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/download" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的下载"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#E3E3E0"
+                android:textSize="16sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="105dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/playing" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最近播放"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#E3E3E0"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="105dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/singer" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的歌手"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#E3E3E0"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="105dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/like" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我喜欢的"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#E3E3E0"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#081700"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/photo6" />
+            <TextView
+                android:layout_width="310dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:text="我创建的歌单"
+                android:textColor="#E3E3E0"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&#062;"
+                android:textColor="#E3E3E0"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#081700"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/photo1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="跑酷单---耳朵会传染神"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#E3E3E0"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30首，已下载5首"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#E3E3E0"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#081700"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/photo2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【电音&#038;燃音】超级带感 极致享受"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#E3E3E0"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50首"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#E3E3E0"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#081700"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/photo7" />
+            <TextView
+                android:layout_width="310dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:text="我收藏的歌单"
+                android:textColor="#E3E3E0"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&#062;"
+                android:textColor="#E3E3E0"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#081700"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/photo3" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="都在这里【100首跑步音乐】"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#E3E3E0"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100首  来自DoubleRainbow"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#E3E3E0"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#081700"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/photo4" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="街头极限健身 Street Workout"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#E3E3E0"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50首  来自zellaDay"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#E3E3E0"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="0dp"
+            android:background="#081700"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/photo5" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【英语】减肥动力之歌"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#E3E3E0"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30首  已下载5首"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#E3E3E0"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#081700">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="60dp"
+                android:background="#081700">
+            </LinearLayout>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/photo9" />
+
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="0dp"
+            android:paddingBottom="10dp"
+            android:background="#081700"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/photo10" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发现音乐"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#E3E3E0"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/photo11" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的音乐"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#E3E3E0"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
