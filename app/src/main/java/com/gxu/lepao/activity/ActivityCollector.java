@@ -1,4 +1,4 @@
-package com.gxu.lepao;
+package com.gxu.lepao.activity;
 
 import android.app.Activity;
 

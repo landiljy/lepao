@@ -59,7 +59,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="25dp"
                 android:background="@drawable/buttonshape"
-                android:inputType="text"
+                android:inputType="number"
                 android:hint="手机号"
                 android:textColorHint="#505D4B"
                 android:textAlignment="center"

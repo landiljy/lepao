@@ -59,7 +59,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="25dp"
                 android:background="@drawable/buttonshape"
-                android:inputType="text"
+                android:inputType="textPassword"
                 android:hint="设置密码"
                 android:textColorHint="#505D4B"
                 android:textAlignment="center"
@@ -67,7 +67,7 @@
                 android:textSize="22sp" />
 
             <EditText
-                android:inputType="text"
+                android:inputType="textPassword"
                 android:layout_width="320dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
@@ -80,7 +80,7 @@
                 android:textSize="22sp" />
 
             <EditText
-                android:inputType="text"
+                android:inputType="number"
                 android:layout_width="320dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
