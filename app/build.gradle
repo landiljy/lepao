@@ -19,6 +19,14 @@ android {
     }
 }
 
+//Mob短信验证码    ----start
+repositories{
+    flatDir{
+        dirs 'libs'//就是放aar的目录地址
+    }
+}
+//Mob短信验证码    ----end
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -28,6 +36,14 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:design:25.3.1'
     testCompile 'junit:junit:4.12'
-    compile 'org.litepal.android:core:1.4.1'//LitePal:开源的Android数据库框架
+    compile 'org.litepal.android:core:1.4.1'
+    //LitePal:开源的Android数据库框架  ---start
     compile files('libs/litepal-1.4.1-src.jar')
+    //LitePal:开源的Android数据库框架  ---end
+    //Mob短信验证码   ---start
+    compile files('libs/MobCommons-2017.0321.1624.jar')
+    compile files('libs/MobTools-2017.0321.1624.jar')
+    compile name:'SMSSDK-2.1.4',ext:"aar"
+    compile name:'SMSSDKGUI-2.1.4',ext:'aar'
+    //Mob短信验证码    ----end
 }

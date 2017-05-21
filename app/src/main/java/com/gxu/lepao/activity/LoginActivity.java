@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.gxu.lepao.R;
 import com.gxu.lepao.model.UserInfo;
@@ -29,6 +30,8 @@ public class LoginActivity extends BaseActivity {
     private EditText phoneEdit;
     private EditText passwordEdit;
     private Button login;
+    private TextView register;
+    private TextView reset;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +41,7 @@ public class LoginActivity extends BaseActivity {
         phoneEdit = (EditText) findViewById(R.id.phone);
         passwordEdit = (EditText) findViewById(R.id.password);
         login = (Button) findViewById(R.id.login);
+        register = (TextView) findViewById(R.id.register);
         login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -65,5 +69,17 @@ public class LoginActivity extends BaseActivity {
 
             }
         });
+        register.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+
+
+
     }
 }

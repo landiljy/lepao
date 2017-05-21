@@ -79,24 +79,13 @@
                 android:textColor="#505D4B"
                 android:textSize="22sp" />
 
-            <EditText
-                android:inputType="number"
-                android:layout_width="320dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:hint="验证码"
-                android:textColorHint="#505D4B"
-                android:textAlignment="center"
-                android:background="@drawable/buttonshape"
-                android:textColor="#505D4B"
-                android:textSize="22sp" />
+
 
             <Button
                 android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="注册"
+                android:text="提交"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/shape"
                 android:textColor="#FFF"
@@ -110,6 +99,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/login"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -118,6 +108,7 @@
                     android:textSize="18sp" />
 
                 <TextView
+                    android:id="@+id/reset"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="忘记密码"
