@@ -52,7 +52,7 @@ public class HelloActivity extends BaseActivity{
                     finish();
                 }
             }
-        }, 2000);
+        }, 1000);
 
 
     }
