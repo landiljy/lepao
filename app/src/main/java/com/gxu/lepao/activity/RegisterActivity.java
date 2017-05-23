@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.gxu.lepao.R;
 import com.gxu.lepao.model.UserInfo;
@@ -36,6 +37,8 @@ public class RegisterActivity extends BaseActivity {
     private EditText smsEdit;
     private Button getSms;
     private Button submitSms;
+    private TextView login;
+    private TextView reset;
     private CountDownTimer countDownTimer;
     //倒计时
     private int TIME = 60;
@@ -93,6 +96,20 @@ public class RegisterActivity extends BaseActivity {
                 }else{
                     Toast.makeText(RegisterActivity.this,"请输入验证码",Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        login.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RegisterActivity.this,LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+        reset.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RegisterActivity.this,ResetPwdActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -174,8 +191,9 @@ public class RegisterActivity extends BaseActivity {
                         toast("验证码已经发送");
                     } else
                     {
-                        toast("cuowu");
                         ((Throwable) data).printStackTrace();
+                        String str = data.toString();
+                        toast(str);
                     }
                 }
                 if(result==SMSSDK.RESULT_ERROR) {
@@ -217,6 +235,8 @@ public class RegisterActivity extends BaseActivity {
         smsEdit = (EditText) findViewById(R.id.sms);
         getSms = (Button) findViewById(R.id.getSms);
         submitSms = (Button) findViewById(R.id.submitSms);
+        login = (TextView) findViewById(R.id.login);
+        reset = (TextView) findViewById(R.id.reset);
     }
 
     //弹窗确认
@@ -278,35 +298,6 @@ public class RegisterActivity extends BaseActivity {
         }
         return isLogin;
     }
-
-    //    public boolean handleMessage(Message msg) {
-//        int event = msg.arg1;
-//        int result = msg.arg2;
-//        Object data = msg.obj;
-//        //回调完成
-//        if (result == SMSSDK.RESULT_COMPLETE)
-//        {
-//            //验证码验证成功
-//            if (event == SMSSDK.EVENT_SUBMIT_VERIFICATION_CODE)
-//            {
-//                Toast.makeText(RegisterActivity.this, "验证成功", Toast.LENGTH_LONG).show();
-//
-//            }
-//            //已发送验证码
-//            else if (event == SMSSDK.EVENT_GET_VERIFICATION_CODE)
-//            {
-//                Toast.makeText(getApplicationContext(), "验证码已经发送", Toast.LENGTH_SHORT).show();
-//            } else
-//            {
-//                ((Throwable) data).printStackTrace();
-//            }
-//        }
-//        if(result==SMSSDK.RESULT_ERROR) {
-//
-//        }
-//        return false;
-//    }
-
 
 
 }
