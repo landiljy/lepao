@@ -103,6 +103,7 @@ public class RegisterActivity extends BaseActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(RegisterActivity.this,LoginActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
         reset.setOnClickListener(new View.OnClickListener(){
@@ -110,6 +111,7 @@ public class RegisterActivity extends BaseActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(RegisterActivity.this,ResetPwdActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
