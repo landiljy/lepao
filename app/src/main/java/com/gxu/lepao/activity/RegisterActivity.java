@@ -90,9 +90,6 @@ public class RegisterActivity extends BaseActivity {
                 String phone = phoneEdit.getText().toString();
                 if(!TextUtils.isEmpty(sms)){
                     SMSSDK.submitVerificationCode( country,  phone,  sms);
-                    Intent intent = new Intent(RegisterActivity.this,SetPwdActivity.class);
-                    startActivity(intent);
-                    finish();
                 }else{
                     Toast.makeText(RegisterActivity.this,"请输入验证码",Toast.LENGTH_SHORT).show();
                 }
@@ -156,20 +153,53 @@ public class RegisterActivity extends BaseActivity {
     // 初始化短信SDK
     private void initSDK() {
         SMSSDK.initSDK(this, appKey, appSecret, true);
-        final Handler handler = new Handler();
+        //final Handler handler = new Handler();
         EventHandler eventHandler = new EventHandler() {
             public void afterEvent(int event, int result, Object data) {
-                Message msg = new Message();
-                msg.arg1 = event;
-                msg.arg2 = result;
-                msg.obj = data;
-                handler.sendMessage(msg);
+                //回调完成
+                if (result == SMSSDK.RESULT_COMPLETE)
+                {
+                    //验证码验证成功
+                    if (event == SMSSDK.EVENT_SUBMIT_VERIFICATION_CODE)
+                    {
+                        toast("验证成功");
+                        Intent intent = new Intent(RegisterActivity.this,SetPwdActivity.class);
+                        intent.putExtra("phone",phoneEdit.getText().toString());
+                        startActivity(intent);
+                        finish();
+                    }
+                    //已发送验证码
+                    else if (event == SMSSDK.EVENT_GET_VERIFICATION_CODE)
+                    {
+                        toast("验证码已经发送");
+                    } else
+                    {
+                        toast("cuowu");
+                        ((Throwable) data).printStackTrace();
+                    }
+                }
+                if(result==SMSSDK.RESULT_ERROR) {
+                    toast("验证码错误");
+                }
+
             }
         };
         // 注册回调监听接口
         SMSSDK.registerEventHandler(eventHandler);
         ready = true;
     }
+
+    //吐司的一个小方法
+    private void toast(final String str) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(RegisterActivity.this, str, Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+
 
     //销毁短信注册
     @Override
@@ -200,7 +230,6 @@ public class RegisterActivity extends BaseActivity {
                         dialog.dismiss();
                         //通过sdk发送短信验证（请求获取短信验证码，在监听（eventHandle）中返回）
                         SMSSDK.getVerificationCode(country, phoneEdit.getText().toString());
-                        Toast.makeText(RegisterActivity.this, "已发送", Toast.LENGTH_SHORT).show();
                         //设置获取验证码按钮不能点击
                         getSms.setClickable(false);
                         //倒计时，执行次数为（TIME+1）*1000/1000,countDownTimer每次执行间隔：1000（单位为毫秒）
