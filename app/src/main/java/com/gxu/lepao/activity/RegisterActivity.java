@@ -69,7 +69,7 @@ public class RegisterActivity extends BaseActivity {
                 isLogin = isRegister();
                 if(!TextUtils.isEmpty(phoneEdit.getText().toString())){
                     if(!isLogin){
-                         //发送短信权限
+                         //接收短信权限
                         if(ContextCompat.checkSelfPermission(RegisterActivity.this
                                 ,Manifest.permission.RECEIVE_SMS) != PackageManager.PERMISSION_GRANTED){
                             //显示申请权限弹窗
@@ -127,7 +127,7 @@ public class RegisterActivity extends BaseActivity {
                         //接收短信权限
                         ActivityCompat.requestPermissions(RegisterActivity.this,new String[]{Manifest.permission.RECEIVE_SMS},1);
                        //发送短信权限
-                        ActivityCompat.requestPermissions(RegisterActivity.this,new String[]{Manifest.permission.SEND_SMS},2);
+                        //ActivityCompat.requestPermissions(RegisterActivity.this,new String[]{Manifest.permission.SEND_SMS},2);
                         //弹窗确认
                         alterWarning();
                         break;
@@ -158,13 +158,13 @@ public class RegisterActivity extends BaseActivity {
                     Toast.makeText(this,"你拒绝lepao接收短信权限",Toast.LENGTH_SHORT).show();
                 }
                 break;
-            case 2:
-                if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
-                    Toast.makeText(this,"你授权lepao发送短信权限",Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(this,"你拒绝lepao发送短信权限",Toast.LENGTH_SHORT).show();
-                }
-                break;
+//            case 2:
+//                if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+//                    Toast.makeText(this,"你授权lepao发送短信权限",Toast.LENGTH_SHORT).show();
+//                }else{
+//                    Toast.makeText(this,"你拒绝lepao发送短信权限",Toast.LENGTH_SHORT).show();
+//                }
+//                break;
             default:
         }
     }
